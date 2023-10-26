@@ -1,0 +1,53 @@
+Distribution is a group of packages that can be installed at the same time
+- A great example of this is Anaconda for python
+  - install numpy, pandas and other helpful ml stuff
+
+Python Jupyter Interface
+- when running and in dir if selected edit on the file opens it in raw json
+  - not the editor in Jupyter we're accustomed to
+  - non running files have a couple more options
+  - there is a clusters tab for parrellel processing....?
+
+- file
+  - shift + enter = move down a cell and computes cell
+  - In = input cell
+  - calling a var is as good as printing it
+  - use arrows to move cells up and down, order is nebulous but this is for readability
+  - create markdown cells for comments in the dropdown menu for cell
+  - the command pallet (keyword icon) in the menu is the search bar for cmds
+  
+  Installing packages like matplotlib
+  - through conda
+  - conda install matplotlib
+    - import in file as 
+      - import matplotlib.plplot as plt 
+
+Editor modes
+  - green = edit blue = cmd
+    - cmd = meta edits -> copy, paste, etc.
+    - help dropdown shortcuts shows all the commands
+    - opt + enter = create cell immediately below
+    - cntl + enter = run but stay in current cell
+    - cntl + shift + minus = split a cell in two
+    - shift + m = merge cells
+    - c = copy
+    - v = paste
+    - o = toggle output viewing
+    - h = show shortcuts
+    - p = show the search bar/cmd pallet
+
+    Magic cmds
+    - bash like cmds 
+      - line = single line with spaces deliniators
+        - ls, cp, mv, load, rm, cat, load, run, time (in ms), timeit(std dev), lsmagic
+          - load <filename> populates on first exec and actually runs on 2nd exec
+          * you can call previous output by referencing the cellname -> Out[9]
+      - cell
+        - within a cell, whole cell
+        - magic cmd needs to be at the top of the cell
+        - cell must be preappended by %%
+            - %magic, %%capture (store var), %%writefile 
+
+    Pyplot
+    - format scripts emphasize what you want to show 
+        - takes rgb hex/tuples and strings
